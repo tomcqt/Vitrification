@@ -1,0 +1,5 @@
+{
+  "death.attack.anchor.item": "%2$s anchored %1$s using %3$s",
+  "death.attack.blood_scythe.item": "%1$s suffered bad blood from %3$s whilst fighting %2$s",
+  "death.attack.spewing.item": "%1$s bled out from %3$s whilst fighting %2$s"
+}

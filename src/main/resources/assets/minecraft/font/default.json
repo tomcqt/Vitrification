@@ -1,0 +1,304 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "vitrification:branding/text_logo.png",
+      "ascent": 18,
+      "height": 18,
+      "chars": ["\ue000"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:branding/icon_logo.png",
+      "height": 18,
+      "ascent": 18,
+      "chars": ["\ue001"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_smiling.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊😇"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_affection.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🥰😍🤩😘😗☺😚😙🥲"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_tongue.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😋😛😜🤪😝🤑"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_hand.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🤗🤭🫢🫣🤫🤔🫡"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_neutral_skeptical.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🤐🤨😐😑😶🫥😏😒🙄😬🤥🫨"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_sleepy.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😌😔😪🤤😴🫩"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_unwell.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_hat.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🤠🥳🥸"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_glasses.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😎🤓🧐"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_concerned.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😕🫤😟🙁☹😮😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_negative.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😤😡😠🤬😈👿💀☠"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/face_costume.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["💩🤡👹👺👻👽👾🤖"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/cat_face.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["😺😸😹😻😼😽🙀😿😾"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/monkey_face.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🙈🙉🙊"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/heart.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["💌💘💝💖💗💓💞💕💟❣💔❤🩷🧡💛💚💙🩵💜🤎🖤🩶🤍"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/emotion.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["💋💯💢💥💫💦💨🕳💬🗨🗯💭💤"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hand_fingers_open.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["👋🤚🖐✋🖖🫱🫲🫳🫴🫷🫸"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hand_fingers_partial.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["👌🤌🤏✌🤞🫰🤟🤘🤙"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hand_single_finger.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["👈👉👆🖕👇☝🫵"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hand_fingers_closed.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["👍👎✊👊🤛🤜"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hands.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["👏🙌🫶👐🤲🤝🙏"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hand_prop.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["✍💅🤳"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/body_parts.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["💪🦾🦿🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👁👅👄🫦"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/person_symbol.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🗣👤👥🫂👪👣🫆"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hair_style.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🦰🦱🦳🦲"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/animal_mammal.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🐵🐒🦍🦧🐶🐕🦮🐩🐺🦊🦝🐱🐈🦁🐯"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/animal_amphibian.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🐸"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/animal_reptile.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🐊🐢🦎🐍🐲🐉🦕🦖"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/plant_flower.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["💐🌸💮🪷🏵🌹🥀🌺🌻🌼🌷🪻"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/food_prepared.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        "🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🫔🥙🧆🥚🍳🥘🍲🫕🥣🥗🍿🧈🧂🥫"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/transport_water.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["⚓🛟⛵🛶🚤🛳⛴🛥🚢"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/transport_air.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["✈🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🚀🛸"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/hotel.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🛎🧳"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/time.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["⌛⏳⌚⏰⏱⏲🕰🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/sky_weather.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        "🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡☀🌝🌞🪐⭐🌟🌠🌌☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌀🌈🌂☂☔⛱⚡❄☃⛄☄🔥💧🌊"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/award_medal.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🎖🏆🏅🥇🥈🥉"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/sport.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸🎣🤿🎽🎿🛷🥌"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/event.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫"]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/geometric.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": [
+        "🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼◻◾◽▪▫🔶🔷🔸🔹🔺🔻💠🔘🔳🔲"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "vitrification:emoji/flag.png",
+      "ascent": 7,
+      "height": 8,
+      "chars": ["🏁🚩🎌🏴🏳"]
+    }
+  ]
+}

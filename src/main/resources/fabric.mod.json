@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "vitrification",
+	"version": "${version}",
+	"name": "Vitrification",
+	"description": "Custom textures and more!\nCreated for VitrificaSMP",
+	"authors": [
+		"ttomcat"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/vitrification",
+		"sources": "https://github.com/tomcqt/vitrification"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vitrification/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sh.tomcat.vitrification.Vitrification"
+		],
+		"client": [
+			"sh.tomcat.vitrification.VitrificationClient"
+		]
+	},
+	"mixins": [
+		"vitrification.mixins.json",
+		{
+			"config": "vitrification.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
