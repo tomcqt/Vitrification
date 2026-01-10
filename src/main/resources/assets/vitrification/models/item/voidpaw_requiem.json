@@ -5,6 +5,16 @@
 		"1": "vitrification:item/voidpaw_layer",
 		"particle": "vitrification:item/voidpaw_requiem"
 	},
+	"overrides": [
+		{
+			"predicate": { "amarite:blocking": 1 },
+			"model": "vitrification:item/voidpaw_requiem_blocking"
+		},
+		{
+			"predicate": { "amarite:gui": 1, "amarite:accumulate": 1 },
+			"model": "vitrification:item/voidpaw_requiem_blocking"
+		}
+	],
 	"elements": [
 		{
 			"name": "w2_0",

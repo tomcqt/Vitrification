@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import sh.tomcat.vitrification.util.ItemModelRegistry;
 import sh.tomcat.vitrification.util.ItemModelUtil;
 
+import java.util.Locale;
+
 public class Vitrification implements ModInitializer {
 	public static final String MOD_ID = "vitrification";
 
@@ -19,6 +21,7 @@ public class Vitrification implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SmithingTableHandler.register();
+		AnvilHandler.register();
 		LOGGER.info("It's Vitrificating time.");
 	}
 }

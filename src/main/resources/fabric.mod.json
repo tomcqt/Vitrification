@@ -23,16 +23,14 @@
 		]
 	},
 	"mixins": [
-		"vitrification.mixins.json",
-		{
-			"config": "vitrification.client.mixins.json",
-			"environment": "client"
-		}
+		"vitrification.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"amarite": "1.0.8",
+		"trinkets": "3.7.2"
 	}
 }
