@@ -2,7 +2,8 @@ package sh.tomcat.vitrification;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.model.BakedModel;
-import net.minecraft.client.util.ModelIdentifier;
+import net.minecraft.client.render.model.BakedModelManager;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import sh.tomcat.vitrification.util.ItemModelData;
@@ -12,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class VitrificationModelSwapper {
-    private static final Map<String, ModelIdentifier> MODEL_CACHE = new HashMap<>();
+    private static final Map<String, Identifier> MODEL_CACHE = new HashMap<>();
 
     private VitrificationModelSwapper() {}
 
@@ -34,20 +35,35 @@ public final class VitrificationModelSwapper {
         String modelPath = data.modelData().get(modelId);
         if (modelPath == null) return original;
 
-        ModelIdentifier modelIdentifier = MODEL_CACHE.computeIfAbsent(modelPath, path -> {
-            Identifier id = new Identifier(path);
-            return new ModelIdentifier(id, "inventory");
-        });
+        // Check if player is blocking and we have a blocking variant
+        if (isPlayerBlocking(stack)) {
+            String blockingPath = modelPath + "_blocking";
+            Identifier blockingId = MODEL_CACHE.computeIfAbsent(blockingPath, Identifier::new);
+            BakedModelManager manager = MinecraftClient.getInstance().getBakedModelManager();
+            BakedModel blockingModel = manager.getModel(blockingId);
+            
+            if (blockingModel != null && blockingModel != manager.getMissingModel()) {
+                return blockingModel;
+            }
+        }
 
-        BakedModel customModel = MinecraftClient.getInstance()
-                .getBakedModelManager()
-                .getModel(modelIdentifier);
+        Identifier modelIdentifier = MODEL_CACHE.computeIfAbsent(modelPath, Identifier::new);
 
-        if (customModel == null || customModel == MinecraftClient.getInstance()
-                .getBakedModelManager().getMissingModel()) {
+        BakedModelManager manager = MinecraftClient.getInstance().getBakedModelManager();
+        BakedModel customModel = manager.getModel(modelIdentifier);
+
+        if (customModel == null || customModel == manager.getMissingModel()) {
             return original;
         }
 
         return customModel;
+    }
+
+    private static boolean isPlayerBlocking(ItemStack stack) {
+        MinecraftClient client = MinecraftClient.getInstance();
+        if (client.player == null) return false;
+        
+        PlayerEntity player = client.player;
+        return player.isUsingItem() && player.getActiveItem() == stack;
     }
 }

@@ -2,16 +2,8 @@ package sh.tomcat.vitrification;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.event.player.UseBlockCallback;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sh.tomcat.vitrification.util.ItemModelRegistry;
-import sh.tomcat.vitrification.util.ItemModelUtil;
-
-import java.util.Locale;
 
 public class Vitrification implements ModInitializer {
 	public static final String MOD_ID = "vitrification";
@@ -20,8 +12,10 @@ public class Vitrification implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("It's Vitrificating time.");
+		ModItems.register();
+		ModItemGroups.register();
 		SmithingTableHandler.register();
 		AnvilHandler.register();
-		LOGGER.info("It's Vitrificating time.");
 	}
 }

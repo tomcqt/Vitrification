@@ -5,7 +5,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import sh.tomcat.vitrification.util.ItemModelData;
 import sh.tomcat.vitrification.util.ItemModelRegistry;
 import sh.tomcat.vitrification.util.ItemModelUtil;
 

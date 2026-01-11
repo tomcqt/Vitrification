@@ -16,6 +16,13 @@
     },
     {
       "type": "bitmap",
+      "file": "vitrification:emoji/vitrificasmp.png",
+      "height": 8,
+      "ascent": 7,
+      "chars": ["\ue002"]
+    },
+    {
+      "type": "bitmap",
       "file": "vitrification:emoji/face_smiling.png",
       "ascent": 7,
       "height": 8,

@@ -23,7 +23,7 @@
 		]
 	},
 	"mixins": [
-		"vitrification.mixins.json"
+		"vitrification.client.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
@@ -31,6 +31,6 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"amarite": "1.0.8",
-		"trinkets": "3.7.2"
+		"trinkets": ">=3.7.2"
 	}
 }
