@@ -7,9 +7,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item AMARITE_LONGSWORD = Registries.ITEM.get(
-            new Identifier("amarite", "amarite_longsword")
-    );
+    private static Item amariteLongsword = null;
+
+    public static Item getAmariteLongsword() {
+        if (amariteLongsword == null) {
+            amariteLongsword = Registries.ITEM.get(new Identifier("amarite", "amarite_longsword"));
+        }
+        return amariteLongsword;
+    }
 
     public static final Item CREATIVE_TAB_ICON =
             Registry.register(Registries.ITEM,

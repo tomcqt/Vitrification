@@ -1,5 +1,5 @@
 plugins {
-	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -34,19 +34,11 @@ repositories {
 		name = "Nucleoid"
 		url = "https://maven.nucleoid.xyz/"
 	}
-	mavenCentral()
-}
-
-loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		"vitrification" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
+	maven {
+		name = "upReleases"
+		url = "https://maven.uuid.gg/releases"
 	}
-
+	mavenCentral()
 }
 
 dependencies {
@@ -63,11 +55,14 @@ dependencies {
 
 	// custom mods for the custom items that we change
 	modImplementation "maven.modrinth:amarite:1.0.8"
+	modImplementation "maven.modrinth:arsenal:0.1.5-1.20.1"
 
 	// dependencies
 	modImplementation "maven.modrinth:trinkets:3.7.2" // required by amarite
-	modImplementation("io.github.onyxstudios:Cardinal-Components-API:5.2.3") {exclude module: 'fabric-api'} // required by trinkets
+	modImplementation("io.github.onyxstudios:Cardinal-Components-API:5.2.3") {exclude module: 'fabric-api'} // required by trinketsarseb
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.4.0") // required by amarite
+	modImplementation "maven.modrinth:ratatouille:1.0.9-1.20.1" // required by arsenal
+	modImplementation "dev.upcraft.datasync:datasync-minecraft-1.20.1-fabric:0.10.3" // required by ratatouille
 }
 
 processResources {

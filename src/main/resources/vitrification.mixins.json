@@ -2,8 +2,11 @@
   "required": true,
   "package": "sh.tomcat.vitrification.mixin",
   "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ScytheItemMixin"
+  ],
   "client": [
-    "ItemRendererMixin"
+    "client.ItemRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

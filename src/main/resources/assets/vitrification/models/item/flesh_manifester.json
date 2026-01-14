@@ -1,0 +1,7 @@
+{
+  "parent": "amarite:item/amarite_longsword",
+  "textures": {
+    "layer0": "vitrification:item/flesh_manifester",
+    "layer1": "vitrification:item/transparent16x16"
+  }
+}

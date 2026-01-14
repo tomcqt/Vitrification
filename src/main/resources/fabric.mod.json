@@ -8,7 +8,7 @@
 		"ttomcat"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/vitrification",
+		"homepage": "https://modrinth.com/mod/vitrificasmp",
 		"sources": "https://github.com/tomcqt/vitrification"
 	},
 	"license": "CC0-1.0",
@@ -19,11 +19,11 @@
 			"sh.tomcat.vitrification.Vitrification"
 		],
 		"client": [
-			"sh.tomcat.vitrification.VitrificationClient"
+			"sh.tomcat.vitrification.client.Vitrification"
 		]
 	},
 	"mixins": [
-		"vitrification.client.mixins.json"
+		"vitrification.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
@@ -31,6 +31,7 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"amarite": "1.0.8",
-		"trinkets": ">=3.7.2"
+		"trinkets": ">=3.7.2",
+		"placeholder-api": ">=2.1.4"
 	}
 }
